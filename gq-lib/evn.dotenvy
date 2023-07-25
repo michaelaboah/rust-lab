@@ -1,0 +1,7 @@
+# The purpose of this env file is to populate changing enviroment variables such as URL routes
+# LIVE_API = "ws://localhost:8083/ws"
+# GQ_LIVE_API = "wss://api.goquant.io/ws"
+GQ_LIVE_API = "ws://localhost:5050/ws"
+GQ_AUTH = "http://localhost:8080/login"
+# GQ_EXCH_SYMBOLS = "https://api.goquant.io/symbols?exchange="
+GQ_EXCH_SYMBOLS = "http://localhost:5050/symbols?exchange="

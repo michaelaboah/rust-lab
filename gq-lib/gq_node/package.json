@@ -1,0 +1,33 @@
+{
+  "name": "gq-node",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "src/index.ts",
+  "keywords": ["gq-node", "typescript"],
+  "readme": "GqNode.README.md",
+
+  "author": {
+    "name": "GoQuant Technologies Inc",
+    "url": "https://goquant.io"
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc",
+    "dev": "nodemon --exec npm start",
+    "dev:tsn": "nodemon --exec npm run start:tsn",
+    "start": "node dist/index.js",
+    "start:tsn": "ts-node src/index.ts"
+  },
+  "license": "MIT",
+  "dependencies": {    
+    "ffi-napi": "^4.0.3",
+    "ref-napi": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/ref-napi": "^3.0.7",
+    "@types/ffi-napi": "^4.0.7",
+    "nodemon": "^2.0.21",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
