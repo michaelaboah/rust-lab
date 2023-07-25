@@ -1,0 +1,24 @@
+[package]
+name = "singular"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1.68"
+awc = { version = "3.1.1", features = ["rustls"] }
+crossbeam = { version = "0.8.2", features = ["crossbeam-channel"] }
+futures-util = "0.3.28"
+ordered-float = { version = "3.7.0", features = ["serde"] }
+rayon = "1.7.0"
+serde = { version = "1.0.164", features = ["derive"] }
+serde-aux = "4.2.0"
+serde_json = "1.0.99"
+strum = { version = "0.25.0", features = ["strum_macros", "derive"] }
+tokio = { version = "1.29.0", features = ["full"] }
+tokio-tungstenite = { version = "0.19.0", features = ["rustls", "native-tls"] }
+url = "2.4.0"
+
+[dev-dependencies]
+mockall = "0.11.4"
